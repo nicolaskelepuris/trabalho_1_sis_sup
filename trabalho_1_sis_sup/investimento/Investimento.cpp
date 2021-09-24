@@ -13,3 +13,11 @@ Investimento::Investimento(double montante, double taxaJurosAno, int periodoInve
     this->taxaJurosAno = taxaJurosAno;
     this->periodoInvestimentoAnos = periodoInvestimentoAnos;
 }
+
+double Investimento::GetMontanteFinalPeriodoJurosSimples() 
+{
+    double acrescimoPorAno = montante * taxaJurosAno;
+    double acrescimoFinalPeriodo = acrescimoPorAno * periodoInvestimentoAnos;
+    double montanteFinal = montante + acrescimoFinalPeriodo;
+    return montanteFinal;
+}
