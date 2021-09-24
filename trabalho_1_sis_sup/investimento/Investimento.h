@@ -12,9 +12,9 @@ class Investimento
         Investimento(double montante, double taxaJurosAno);
         Investimento(double montante, double taxaJurosAno, int periodoInvestimentoAnos);
 
-        int GetMontanteFinalPeriodoJurosSimples();
-        int GetMontanteFinalPeriodoJurosCompostos();
-        int GetTaxaJurosMes();
+        double GetMontanteFinalPeriodoJurosSimples();
+        double GetMontanteFinalPeriodoJurosCompostos();
+        double GetTaxaJurosMes();
         static Investimento FindInvestimentoMaiorMontanteFinal();
 };
 
