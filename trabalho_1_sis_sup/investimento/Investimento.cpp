@@ -34,3 +34,8 @@ double Investimento::GetTaxaJurosMes()
 {
     return pow(1 + taxaJurosAno, 1.0/12.0) - 1;
 }
+
+Investimento FindInvestimentoMaiorMontanteFinal(Investimento investimento1, Investimento investimento2)
+{
+
+}

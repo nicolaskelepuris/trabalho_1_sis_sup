@@ -15,7 +15,7 @@ class Investimento
         double GetMontanteFinalPeriodoJurosSimples();
         double GetMontanteFinalPeriodoJurosCompostos();
         double GetTaxaJurosMes();
-        static Investimento FindInvestimentoMaiorMontanteFinal();
+        static Investimento FindInvestimentoMaiorMontanteFinal(Investimento investimento1, Investimento investimento2);
 };
 
 #endif
