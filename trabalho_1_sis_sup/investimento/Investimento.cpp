@@ -1,4 +1,5 @@
 #include "Investimento.h"
+#include <math.h> 
 
 Investimento::Investimento(double montante, double taxaJurosAno)
 {
@@ -19,5 +20,12 @@ double Investimento::GetMontanteFinalPeriodoJurosSimples()
     double acrescimoPorAno = montante * taxaJurosAno;
     double acrescimoFinalPeriodo = acrescimoPorAno * periodoInvestimentoAnos;
     double montanteFinal = montante + acrescimoFinalPeriodo;
+    return montanteFinal;
+}
+
+double Investimento::GetMontanteFinalPeriodoJurosCompostos() 
+{
+    double juros = pow(1 + taxaJurosAno, periodoInvestimentoAnos);
+    double montanteFinal = montante * juros;
     return montanteFinal;
 }
