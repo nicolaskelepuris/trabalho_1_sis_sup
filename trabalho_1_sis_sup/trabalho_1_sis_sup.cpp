@@ -5,8 +5,7 @@ using namespace trabalho_1;
 
 int main()
 {
-    Investimento investimento1(1000, 0.1, 10);
-    Investimento investimento2(1000, 0.2, 10);
-    std::cout << Investimento::FindInvestimentoMaiorMontanteFinal(investimento1, investimento2).GetMontanteFinalPeriodoJurosCompostos();
-    std::cout << investimento2.GetMontanteFinalPeriodoJurosCompostos();
+    Investimento investimento1(1000.0, 0.1, 10);
+    Investimento investimento2(1000.0, 0.2, 0);
+    std::cout << investimento2.GetMontanteFinalPeriodoJurosSimples();
 }
