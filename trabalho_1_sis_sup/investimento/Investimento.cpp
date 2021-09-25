@@ -37,5 +37,12 @@ double Investimento::GetTaxaJurosMes()
 
 Investimento FindInvestimentoMaiorMontanteFinal(Investimento investimento1, Investimento investimento2)
 {
-
+    if (investimento1.GetMontanteFinalPeriodoJurosCompostos() > investimento2.GetMontanteFinalPeriodoJurosCompostos())
+    {
+        return investimento1;
+    }
+    else
+    {
+        return investimento2;
+    }    
 }
