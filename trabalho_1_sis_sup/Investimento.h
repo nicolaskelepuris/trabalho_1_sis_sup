@@ -1,4 +1,3 @@
-#pragma once
 #ifndef INVESTIMENTO_H
 #define INVESTIMENTO_H
 
