@@ -13,10 +13,21 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Investimentos">
+      <UniqueIdentifier>{cbdd79f4-3bea-4580-a725-8aee65f1ae7a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="trabalho_1_sis_sup.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Investimento.cpp">
+      <Filter>Source Files\Investimentos</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Investimento.h">
+      <Filter>Source Files\Investimentos</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

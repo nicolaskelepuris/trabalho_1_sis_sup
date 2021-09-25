@@ -1,6 +1,8 @@
 #include "Investimento.h"
 #include <math.h>
 
+using namespace trabalho_1;
+
 Investimento::Investimento(double montante, double taxaJurosAno)
 {
     this->montante = montante;
